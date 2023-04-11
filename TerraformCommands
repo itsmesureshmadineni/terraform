@@ -1,0 +1,6 @@
+#Terraform commands
+
+terraform init
+terraform plan
+terraform apply
+terraform apply -target=azurerm_service_plan.app_service_plan ( for a specific resource to execute)
