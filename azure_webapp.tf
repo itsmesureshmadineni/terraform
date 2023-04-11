@@ -15,13 +15,13 @@ resource "azurerm_service_plan" "app_service_plan" {
     os_type = "Linux"
 }
 
-resource "azurerm_linux_web_app" "azurerm_linux_web_app" {
+resource "azurerm_linux_web_app" "linux_web_app" {
     name = "az204-suresh"
     location = var.azure_region
     resource_group_name = azurerm_resource_group.resource_group.name
     service_plan_id = azurerm_service_plan.app_service_plan.id
 
     site_config {
-      
+      always_on = false
     }
 }
