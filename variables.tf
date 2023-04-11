@@ -5,3 +5,8 @@ variable "gcp_project_id" {
 variable "gcp_region" {
     default = "us-central1"
 }
+
+variable "azure_region" {
+    default = "East US"
+}
+
