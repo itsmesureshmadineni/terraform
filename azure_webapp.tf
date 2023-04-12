@@ -20,6 +20,7 @@ resource "azurerm_linux_web_app" "linux_web_app" {
     location = var.azure_region
     resource_group_name = azurerm_resource_group.resource_group.name
     service_plan_id = azurerm_service_plan.app_service_plan.id
+    always_on = "False"
 
     site_config {
       always_on = false

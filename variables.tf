@@ -10,3 +10,10 @@ variable "azure_region" {
     default = "East US"
 }
 
+variable "azure_admin_user_name" {
+    default = "suresh"
+}
+
+variable "azure_ssh_key" {
+    default = "/home/suresh/.ssh/suresh.pub"
+}
